@@ -9,7 +9,6 @@ import com.alan.findfamily.utils.Config;
 import com.alan.findfamily.utils.ToastUtil;
 import com.baidu.mapapi.SDKInitializer;
 
-import android.support.v7.app.ActionBarActivity;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
