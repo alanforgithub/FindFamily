@@ -76,7 +76,7 @@
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="XrUw8oorElIYd6OfA5XVZcz1" />
-
+        
         <activity
             android:name="com.alan.findfamily.ui.MainActivity"
             android:label="@string/app_name" >
@@ -86,6 +86,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
         <activity android:name="com.alan.findfamily.ui.RoutePlanAactivity" >
         </activity>
         <activity

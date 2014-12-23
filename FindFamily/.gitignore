@@ -1,5 +1,0 @@
-#过滤/bin,/gin, *.class
-
-/bin
-/gen
-*.class
