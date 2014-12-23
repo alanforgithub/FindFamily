@@ -1,6 +1,7 @@
 package com.alan.findfamily.ui;
 
 import com.alan.findfamily.R;
+import com.alan.findfamily.utils.ToastUtil;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
@@ -18,7 +19,6 @@ import com.baidu.mapapi.search.route.PlanNode;
 import com.baidu.mapapi.search.route.RoutePlanSearch;
 import com.baidu.mapapi.search.route.TransitRouteResult;
 import com.baidu.mapapi.search.route.WalkingRouteResult;
-import com.jumei.findfamily.utils.ToastUtil;
 
 import android.app.Activity;
 import android.location.Location;

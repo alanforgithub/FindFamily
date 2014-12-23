@@ -1,4 +1,4 @@
-package com.jumei.findfamily.utils;
+package com.alan.findfamily.utils;
 
 public class Config {
 	

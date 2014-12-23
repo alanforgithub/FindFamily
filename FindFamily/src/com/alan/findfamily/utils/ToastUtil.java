@@ -1,4 +1,4 @@
-package com.jumei.findfamily.utils;
+package com.alan.findfamily.utils;
 
 import android.content.Context;
 import android.text.TextUtils;

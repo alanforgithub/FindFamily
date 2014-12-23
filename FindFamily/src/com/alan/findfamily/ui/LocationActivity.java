@@ -5,6 +5,7 @@ import cn.bmob.v3.listener.SaveListener;
 import com.alan.findfamily.R;
 import com.alan.findfamily.model.Location;
 import com.alan.findfamily.model.User;
+import com.alan.findfamily.utils.ToastUtil;
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
@@ -27,7 +28,6 @@ import com.baidu.mapapi.search.geocode.GeoCoder;
 import com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeOption;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
-import com.jumei.findfamily.utils.ToastUtil;
 
 import android.app.Activity;
 import android.os.Bundle;

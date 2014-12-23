@@ -5,11 +5,12 @@ import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobInstallation;
 
 import com.alan.findfamily.R;
+import com.alan.findfamily.utils.Config;
+import com.alan.findfamily.utils.ToastUtil;
 import com.baidu.mapapi.SDKInitializer;
-import com.jumei.findfamily.utils.Config;
-import com.jumei.findfamily.utils.ToastUtil;
 
 import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -24,7 +25,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends ActionBarActivity implements OnClickListener {
+public class MainActivity extends Activity implements OnClickListener {
 
 	private SDKReceiver mReceiver;
 

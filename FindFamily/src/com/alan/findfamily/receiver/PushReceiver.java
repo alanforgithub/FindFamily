@@ -1,6 +1,6 @@
 package com.alan.findfamily.receiver;
 
-import com.jumei.findfamily.utils.ToastUtil;
+import com.alan.findfamily.utils.ToastUtil;
 
 import cn.bmob.push.PushConstants;
 import android.content.BroadcastReceiver;
