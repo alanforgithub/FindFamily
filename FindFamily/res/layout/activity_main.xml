@@ -1,20 +1,138 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding" >
 
-    <Button
-        android:id="@+id/rootPlan"
+    <ImageView
+        android:id="@+id/appIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="路线规划" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/logo_margintop"
+        android:layout_marginTop="@dimen/logo_margintop"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg_01"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/edit_padding_left" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/username_marginright"
+            android:text="@string/user_name"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/username_textsize" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingRight="@dimen/edit_padding_right"
+            android:singleLine="true"
+            android:textSize="@dimen/username_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_bg_02"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/edit_padding_left" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/username_marginright"
+            android:text="@string/pass_word"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/username_textsize" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:paddingRight="@dimen/edit_padding_right"
+            android:singleLine="true"
+            android:textSize="@dimen/username_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/auto_login_layout_paddingtop"
+        android:paddingLeft="@dimen/auto_login_layout_paddingleft"
+        android:paddingRight="@dimen/auto_login_layout_paddingright"
+        android:paddingTop="@dimen/auto_login_layout_paddingbottom" >
+
+        <com.alan.findfamily.view.CheckBoxNoPersistentText
+            android:id="@+id/autoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_pwd"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/checkbox_textsize" />
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:visibility="invisible"
+            android:text="@string/forget_password"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/checkbox_textsize" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rootPlan"
-        android:text="定位" />
+        android:layout_marginBottom="@dimen/login_btn_marginbottom"
+        android:layout_marginTop="@dimen/login_btn_margintop"
+        android:background="@drawable/button_register"
+        android:gravity="center"
+        android:paddingBottom="@dimen/login_btn_text_padding"
+        android:paddingTop="@dimen/login_btn_text_padding"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/login_btn_textsize" />
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/register_layout_paddingbottom"
+        android:paddingRight="@dimen/register_layout_paddingright"
+        android:paddingTop="@dimen/register_layout_paddingtop" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_no_acount"
+            android:textColor="@color/login_text_color"
+            android:textSize="@dimen/register_tip_text_size" />
+
+        <TextView
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/rigister_now"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="@dimen/register_tip_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

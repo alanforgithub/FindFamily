@@ -1,11 +1,7 @@
 package com.alan.findfamily.ui;
 
-import cn.bmob.v3.listener.SaveListener;
-
 import com.alan.findfamily.R;
 import com.alan.findfamily.model.Location;
-import com.alan.findfamily.model.User;
-import com.alan.findfamily.utils.ToastUtil;
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
@@ -192,12 +188,11 @@ public class LocationActivity extends Activity implements
 			mCurrentPoint.setLatitude(location.getLatitude());
 
 			// 经纬度信息
-			Log.i(TAG, "当前信息 = " + mCurrentPoint.toString()+",,"+location.getCity());
+			Log.i(TAG,
+					"当前信息 = " + mCurrentPoint.toString() + ",,"
+							+ location.getCity());
 
-			
-			
-			searchWithLatLng(new LatLng(39.904965,
-					116.327764));
+			searchWithLatLng(new LatLng(39.904965, 116.327764));
 
 		}
 
@@ -304,32 +299,32 @@ public class LocationActivity extends Activity implements
 				"通过经纬度搜索位置信息==" + result.getAddress() + ",,"
 						+ result.getAddressDetail().city + ",,,,"
 						+ result.getLocation().toString());
-		
-		
-		User user = new User();
-		user.setUserId("123456");
-		user.setUserName("alan");
-		Location loc = new Location();
-		loc.setLatitude(result.getLocation().longitude);
-		loc.setLongitude(result.getLocation().longitude);
-		loc.setLocationName(result.getAddress());
-		//user.setCurrentLocation(loc);
-		
-		user.save(LocationActivity.this, new SaveListener() {
-			
-			@Override
-			public void onSuccess() {
-				// TODO Auto-generated method stub
-				ToastUtil.showToast(getApplicationContext(), "成功");
-			}
-			
-			@Override
-			public void onFailure(int arg0, String arg1) {
-				// TODO Auto-generated method stub
-				ToastUtil.showToast(getApplicationContext(), "失败");
-			}
-		});
-		
+
+		// User user = new User();
+		// user.setUserName("123456");
+		// user.setUserName("alan");
+		// Location loc = new Location();
+		// loc.setLatitude(result.getLocation().longitude);
+		// loc.setLongitude(result.getLocation().longitude);
+		// loc.setLocationName(result.getAddress());
+		// //user.setCurrentLocation(loc);
+		//
+		// user.save(LocationActivity.this, new SaveListener() {
+		//
+		// @Override
+		// public void onSuccess() {
+		// // TODO Auto-generated method stub
+		// ToastUtil.showToast(getApplicationContext(), "成功");
+		// }
+		//
+		// @Override
+		// public void onFailure(int arg0, String arg1) {
+		// // TODO Auto-generated method stub
+		// ToastUtil.showToast(getApplicationContext(), "失败");
+		// }
+		// });
+
+		// TODO 上传用户的位置
 
 	}
 }

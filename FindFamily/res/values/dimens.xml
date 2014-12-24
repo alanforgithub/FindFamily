@@ -4,4 +4,26 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- 登陆界面 -->
+    <dimen name="edit_padding_left">15dp</dimen>
+    <dimen name="edit_padding_right">5dp</dimen>
+    <dimen name="layout_padding">22dp</dimen>
+    <dimen name="logo_margintop">50dp</dimen>
+    <dimen name="username_marginright">10dp</dimen>
+    <dimen name="username_textsize">18sp</dimen>
+    <dimen name="auto_login_layout_paddingtop">10dp</dimen>
+    <dimen name="auto_login_layout_paddingbottom">10dp</dimen>
+    <dimen name="auto_login_layout_paddingleft">20dp</dimen>
+    <dimen name="auto_login_layout_paddingright">20dp</dimen>
+    <dimen name="checkbox_textsize">15sp</dimen>
+    <dimen name="login_btn_margintop">5dp</dimen>
+    <dimen name="login_btn_marginbottom">5dp</dimen>
+    <dimen name="login_btn_textsize">18sp</dimen>
+    <dimen name="login_btn_text_padding">13dp</dimen>
+    <dimen name="register_layout_paddingtop">10dp</dimen>
+    <dimen name="register_layout_paddingbottom">10dp</dimen>
+    <dimen name="register_layout_paddingright">20dp</dimen>
+    <dimen name="register_tip_text_size">15sp</dimen>
+    <dimen name="dialog_textSize">21sp</dimen>
+
 </resources>

@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
     <issue id="ExportedReceiver" severity="ignore" />
+    <issue id="HardcodedText" severity="ignore" />
+    <issue id="InefficientWeight" severity="ignore" />
+    <issue id="NewApi" severity="ignore" />
+    <issue id="Orientation" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="Suspicious0dp" severity="ignore" />
 </lint>

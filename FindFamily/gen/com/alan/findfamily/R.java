@@ -10,6 +10,14 @@ package com.alan.findfamily;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int background1=0x7f040004;
+        public static final int button_reg_normal=0x7f040001;
+        public static final int button_reg_pressed=0x7f040002;
+        public static final int edittext_color=0x7f040005;
+        public static final int login_text_color=0x7f040000;
+        public static final int white=0x7f040003;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
 
@@ -18,63 +26,152 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+        public static final int auto_login_layout_paddingbottom=0x7f050009;
+        public static final int auto_login_layout_paddingleft=0x7f05000a;
+        public static final int auto_login_layout_paddingright=0x7f05000b;
+        /**  登陆界面 
+         */
+        public static final int auto_login_layout_paddingtop=0x7f050008;
+        public static final int button_padding_top=0x7f05001c;
+        public static final int checkbox_textsize=0x7f05000c;
+        public static final int default_text_size=0x7f050021;
+        public static final int dialog_textSize=0x7f050015;
+        /**  登陆界面 
+         */
+        public static final int edit_padding_left=0x7f050002;
+        public static final int edit_padding_right=0x7f050003;
+        public static final int layout_padding=0x7f050004;
+        public static final int login_btn_marginbottom=0x7f05000e;
+        public static final int login_btn_margintop=0x7f05000d;
+        public static final int login_btn_text_padding=0x7f050010;
+        public static final int login_btn_textsize=0x7f05000f;
+        public static final int logo_margintop=0x7f050005;
+        public static final int reg_label_send_active_code_marginTop=0x7f05001e;
+        public static final int reg_layout_editview_marginTop=0x7f05001d;
+        public static final int reg_protocol_sure_paddingBottom=0x7f050020;
+        public static final int reg_protocol_sure_paddingTop=0x7f05001f;
+        public static final int reg_registrtitle_marginBottom=0x7f05001b;
+        public static final int reg_registrtitle_marginTop=0x7f05001a;
+        /**  注册界面 
+         */
+        public static final int register_checbox_margintop=0x7f050019;
+        public static final int register_layout_paddingbottom=0x7f050012;
+        public static final int register_layout_paddingright=0x7f050013;
+        public static final int register_layout_paddingtop=0x7f050011;
+        public static final int register_tip_text_size=0x7f050014;
+        public static final int tv_top_padding=0x7f050022;
+        public static final int username_marginright=0x7f050006;
+        public static final int username_textsize=0x7f050007;
+        public static final int weather_outline_marginTop=0x7f050017;
+        public static final int weather_param_name_textSize=0x7f050018;
+        /**  天气界面 
+         */
+        public static final int weather_value_marginTop=0x7f050016;
     }
     public static final class drawable {
-        public static final int button_down=0x7f020000;
-        public static final int button_on=0x7f020001;
-        public static final int button_style=0x7f020002;
-        public static final int ground_overlay=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int icon_en=0x7f020005;
-        public static final int icon_gcoding=0x7f020006;
-        public static final int icon_geo=0x7f020007;
-        public static final int icon_marka=0x7f020008;
-        public static final int icon_markb=0x7f020009;
-        public static final int icon_markc=0x7f02000a;
-        public static final int icon_markd=0x7f02000b;
-        public static final int icon_marke=0x7f02000c;
-        public static final int icon_markf=0x7f02000d;
-        public static final int icon_markg=0x7f02000e;
-        public static final int icon_markh=0x7f02000f;
-        public static final int icon_marki=0x7f020010;
-        public static final int icon_markj=0x7f020011;
-        public static final int icon_st=0x7f020012;
-        public static final int next_=0x7f020013;
-        public static final int next_down_=0x7f020014;
-        public static final int popup=0x7f020015;
-        public static final int popup_down=0x7f020016;
-        public static final int popup_left=0x7f020017;
-        public static final int popup_middle=0x7f020018;
-        public static final int popup_right=0x7f020019;
-        public static final int popup_side=0x7f02001a;
-        public static final int pre_=0x7f02001b;
-        public static final int pre_down_=0x7f02001c;
+        public static final int bg_login=0x7f020000;
+        public static final int button_down=0x7f020001;
+        public static final int button_on=0x7f020002;
+        public static final int button_register=0x7f020003;
+        public static final int button_style=0x7f020004;
+        public static final int checkbox=0x7f020005;
+        public static final int checkbox_sel=0x7f020006;
+        public static final int checkbox_unsel=0x7f020007;
+        public static final int edit_bg_01=0x7f020008;
+        public static final int edit_bg_02=0x7f020009;
+        public static final int goto_xieyi=0x7f02000a;
+        public static final int ground_overlay=0x7f02000b;
+        public static final int ic_icon=0x7f02000c;
+        public static final int ic_launcher=0x7f02000d;
+        public static final int icon_en=0x7f02000e;
+        public static final int icon_gcoding=0x7f02000f;
+        public static final int icon_geo=0x7f020010;
+        public static final int icon_marka=0x7f020011;
+        public static final int icon_markb=0x7f020012;
+        public static final int icon_markc=0x7f020013;
+        public static final int icon_markd=0x7f020014;
+        public static final int icon_marke=0x7f020015;
+        public static final int icon_markf=0x7f020016;
+        public static final int icon_markg=0x7f020017;
+        public static final int icon_markh=0x7f020018;
+        public static final int icon_marki=0x7f020019;
+        public static final int icon_markj=0x7f02001a;
+        public static final int icon_st=0x7f02001b;
+        public static final int next_=0x7f02001c;
+        public static final int next_down_=0x7f02001d;
+        public static final int popup=0x7f02001e;
+        public static final int popup_down=0x7f02001f;
+        public static final int popup_left=0x7f020020;
+        public static final int popup_middle=0x7f020021;
+        public static final int popup_right=0x7f020022;
+        public static final int popup_side=0x7f020023;
+        public static final int pre_=0x7f020024;
+        public static final int pre_down_=0x7f020025;
     }
     public static final class id {
-        public static final int bmapView=0x7f060006;
-        public static final int button1=0x7f06000a;
-        public static final int customicon=0x7f060009;
-        public static final int defaulticon=0x7f060008;
-        public static final int destPoint=0x7f060002;
-        public static final int destPoint_edit=0x7f060003;
-        public static final int location=0x7f06000c;
-        public static final int map=0x7f060005;
-        public static final int radioGroup=0x7f060007;
-        public static final int rootPlan=0x7f06000b;
-        public static final int search=0x7f060004;
-        public static final int startPoint=0x7f060000;
-        public static final int startPoint_edit=0x7f060001;
+        public static final int appIcon=0x7f08000b;
+        public static final int autoLogin=0x7f08000e;
+        public static final int bmapView=0x7f080006;
+        public static final int button1=0x7f08000a;
+        public static final int checkBox=0x7f080014;
+        public static final int checkPassword=0x7f080013;
+        public static final int customicon=0x7f080009;
+        public static final int defaulticon=0x7f080008;
+        public static final int destPoint=0x7f080002;
+        public static final int destPoint_edit=0x7f080003;
+        public static final int forgetPassword=0x7f08000f;
+        public static final int gotoXieyiButton=0x7f080015;
+        public static final int loginButton=0x7f080010;
+        public static final int logoView=0x7f080012;
+        public static final int map=0x7f080005;
+        public static final int password=0x7f08000d;
+        public static final int radioGroup=0x7f080007;
+        public static final int registerButton=0x7f080011;
+        public static final int search=0x7f080004;
+        public static final int startPoint=0x7f080000;
+        public static final int startPoint_edit=0x7f080001;
+        public static final int username=0x7f08000c;
+        public static final int widget197=0x7f080017;
+        public static final int widget198=0x7f080016;
     }
     public static final class layout {
         public static final int activity_base_map=0x7f030000;
         public static final int activity_location=0x7f030001;
         public static final int activity_main=0x7f030002;
+        public static final int activity_register=0x7f030003;
+        public static final int dialog_animation_progressbar=0x7f030004;
     }
     public static final class string {
-        public static final int action_settings=0x7f050002;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
+        public static final int action_settings=0x7f060002;
+        public static final int app_name=0x7f060000;
+        public static final int auto_login=0x7f060005;
+        public static final int confirm_pwd=0x7f06000a;
+        public static final int forget_password=0x7f060006;
+        public static final int have_no_acount=0x7f060008;
+        public static final int hello_world=0x7f060001;
+        public static final int input_confirm_pwd=0x7f06000f;
+        public static final int login=0x7f060009;
+        public static final int logining=0x7f060012;
+        public static final int network_error=0x7f06000c;
+        public static final int pass_word=0x7f060003;
+        public static final int password_null=0x7f06000e;
+        public static final int pwd_inconformity=0x7f060010;
+        public static final int register=0x7f06000b;
+        public static final int remember_pwd=0x7f060011;
+        public static final int rigister_now=0x7f060007;
+        public static final int user_name=0x7f060004;
+        public static final int user_name_null=0x7f06000d;
+    }
+    public static final class style {
+        /**  All customizations that are NOT specific to a particular API-level can go here. 
+         */
+        public static final int AppTheme=0x7f070000;
+        /**  背景透明 
+ <item name="android:backgroundDimEnabled">false</item> 
+ 模糊 
+         */
+        public static final int dialog=0x7f070001;
     }
 }

@@ -1,31 +1,20 @@
 package com.alan.findfamily.model;
 
-import java.util.List;
-
 import cn.bmob.v3.BmobObject;
 
 public class User extends BmobObject {
 	
-	private String userId;
+	public static final String USER_NAME = "userName";
+	public static final String PASSWORD = "passWord";
+	public static final String REGISTER_TIME = "registerTime";
+	public static final String LOGIN_TIME = "loginTime";
+	public static final String LOGOUT_TIME = "logoutTime";
+	
 	private String userName;
-	/**
-	 * 现在的位置
-	 */
-	private Location currentLocation;
-	/**
-	 * 上一次的位置
-	 */
-	private Location lastLocation;
-
-	private List<Friend> friends;
-
-	public String getUserId() {
-		return userId;
-	}
-
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
+	private String passWord;
+	private String registerTime;
+	private String loginTime;// 登录时间
+	private String logoutTime;// 退出时间
 
 	public String getUserName() {
 		return userName;
@@ -35,30 +24,43 @@ public class User extends BmobObject {
 		this.userName = userName;
 	}
 
-	public Location getCurrentLocation() {
-		return currentLocation;
+	public String getPassWord() {
+		return passWord;
 	}
 
-	public void setCurrentLocation(Location currentLocation) {
-		this.currentLocation = currentLocation;
+	public void setPassWord(String passWord) {
+		this.passWord = passWord;
 	}
 
-	public Location getLastLocation() {
-		return lastLocation;
+	public String getRegisterTime() {
+		return registerTime;
 	}
 
-	public void setLastLocation(Location lastLocation) {
-		this.lastLocation = lastLocation;
+	public void setRegisterTime(String registerTime) {
+		this.registerTime = registerTime;
 	}
 
-	public List<Friend> getFriends() {
-		return friends;
+	public String getLoginTime() {
+		return loginTime;
 	}
 
-	public void setFriends(List<Friend> friends) {
-		this.friends = friends;
+	public void setLoginTime(String loginTime) {
+		this.loginTime = loginTime;
 	}
-	
-	
-	
+
+	public String getLogoutTime() {
+		return logoutTime;
+	}
+
+	public void setLogoutTime(String logoutTime) {
+		this.logoutTime = logoutTime;
+	}
+
+	@Override
+	public String toString() {
+		return "User [userName=" + userName + ", passWord=" + passWord
+				+ ", registerTime=" + registerTime + ", loginTime=" + loginTime
+				+ ", logoutTime=" + logoutTime + "]";
+	}
+
 }

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- 天气界面 -->
+    <dimen name="weather_value_marginTop">-12dp</dimen>
+    <dimen name="weather_outline_marginTop">15dp</dimen>
+    <dimen name="weather_param_name_textSize">17sp</dimen>
+
+    <!-- 登陆界面 -->
+    <dimen name="auto_login_layout_paddingtop">18dp</dimen>
+    <dimen name="auto_login_layout_paddingbottom">18dp</dimen>
+    <!-- 注册界面 -->
+    <dimen name="register_checbox_margintop">5dp</dimen>
+    <dimen name="reg_registrtitle_marginTop">40dp</dimen>
+    <dimen name="reg_registrtitle_marginBottom">8dp</dimen>
+    <dimen name="button_padding_top">4dp</dimen>
+    <dimen name="reg_layout_editview_marginTop">28dp</dimen>
+    <dimen name="reg_label_send_active_code_marginTop">38dp</dimen>
+    <dimen name="reg_protocol_sure_paddingTop">15dp</dimen>
+    <dimen name="reg_protocol_sure_paddingBottom">15dp</dimen>
+    <dimen name="default_text_size">22sp</dimen>
+    <dimen name="tv_top_padding">45dp</dimen>
+
+</resources>
