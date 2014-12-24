@@ -2,6 +2,7 @@ package com.alan.findfamily.ui;
 
 import com.alan.findfamily.R;
 import com.alan.findfamily.model.Location;
+import com.alan.findfamily.utils.ToastUtil;
 import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
@@ -327,4 +328,18 @@ public class LocationActivity extends Activity implements
 		// TODO 上传用户的位置
 
 	}
+
+	private long lastTime = 0;
+
+	@Override
+	public void onBackPressed() {
+
+		if ((System.currentTimeMillis() - lastTime) < 500) {
+			super.onBackPressed();
+		} else {
+			ToastUtil.showToast(getApplicationContext(), "再次点击返回键将退出应用");
+		}
+		lastTime = System.currentTimeMillis();
+	}
+
 }
